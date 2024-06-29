@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TopNavi from './components/TopNavi';
+import Header from './components/Header';
+import News from './components/News';
+import SNS from './components/SNS';
+import Schedule from './components/Schedule';
+import PastSchedule from './components/PastSchedule';
+import Music from './components/Music';
+import Members from './components/Members';
+import Contact from './components/Contact';
+import Bottom from './components/Bottom';
+import styles from './styles/App.module.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        <>
+          <TopNavi />
+          <Header />
+        <div className={styles.newsSNS}>
+        <div className={styles.news}>
+          <News />
+        </div>
+        <div className={styles.sns}>
+          <SNS />
+        </div>
+        </div>
+          <Schedule/>
+          <PastSchedule />
+          <Music />
+          <Members />
+          <Contact />
+          <Bottom />
+        </>
+      );
 }
 
 export default App;

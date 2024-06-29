@@ -1,0 +1,10 @@
+.SNSheader {
+    text-decoration: underline;
+    margin-top: 70px;
+}
+
+.scrollBox {
+    height: 100px;
+    width: 100px;
+    border: black solid 2px;
+}

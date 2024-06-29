@@ -1,0 +1,21 @@
+.newsHeader {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .articleContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  .newsArticle {
+    height: 200px;
+    width: 300px;
+    margin: 30px;
+  }
+  
+  .articleImg {
+    height: 200px;
+    width: 300px;
+  }
