@@ -1,0 +1,168 @@
+.membersSection {
+    display: flex;
+    background-color: #FDF5F3;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.memberContainer {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+
+.memberProfile {
+    display: flex;
+    flex-direction: column;
+    transform: scale(0.9);
+    margin-right: -60px;
+    height: 100%;
+    margin-top: -100px;
+}
+
+.withImg {
+    display: flex;
+    flex-direction: row;
+}
+
+.sideDetails {
+    width: 25vh;
+    margin-right: -220px;
+}
+
+.withImg .bottomDetails {
+    margin-top: auto;
+}
+
+.memberImg {
+    margin-bottom: -60px;
+}
+
+.eriko {
+    color: #005598;
+}
+.erikoBackground {
+    background-color: #005598;
+}
+
+.ramune {
+    color: #FFB3A9;
+}
+.ramuneBackground {
+    background-color: #FFB3A9;
+}
+.ramuneColorBadge {
+    background-color: #FCD9D5;
+    color: white;
+    border-radius: 50px;
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+
+}
+
+/*member colors*/
+
+.mio {
+    color: #8ECAE5;
+}
+.mioBackground {
+    background-color: #8ECAE5;
+}
+
+.mikan {
+    color: #E70046;
+}
+.mikanBackground {
+    background-color: #E70046;
+}
+
+.nana {
+    color: #E1CD00;
+}
+.nanaBackground {
+    background-color: #E1CD00;
+}
+
+.satomi {
+    color: #DD6299;
+}
+.satomiBackground {
+    background-color: #DD6299;
+}
+
+.momomi {
+    color: #EDA7BF;
+}
+.momomiBackground {
+    background-color: #EDA7BF;
+}
+
+.keina {
+    color: #6F98CF;
+}
+.keinaBackground {
+    background-color: #6F98CF;
+}
+
+.airi {
+    color: #11B6CA;
+}
+.airiBackground {
+    background-color: #11B6CA;
+}
+
+/**/
+
+.memberName {
+    font-size: 30px;
+}
+
+.normalTxt {
+    color: #5E5956;
+    font-size: 15px;
+}
+
+.memberHobby {
+    color: #0B2D4F;
+    font-size: 20px;
+}
+
+.colorBadge {
+    background-color: white;
+    border-radius: 50px;
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;   
+}
+
+.box4 {
+    display: inline-block;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-weight: bold; 
+    width:70px;
+    height: auto;
+    font-size: 13px;
+    margin-bottom: -50px;
+    margin-top: -70px;
+}
+
+.normal4 {
+    padding: 20px;
+    color:#5E5956;
+    font-weight: bold;
+    font-size: 13px;
+}

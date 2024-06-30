@@ -15,6 +15,7 @@ import styles from './styles/App.module.css';
 function App() {
   return (
         <>
+        <div className={styles.body}>
           <TopNavi />
           <Header />
         <div className={styles.newsSNS}>
@@ -31,6 +32,7 @@ function App() {
           <Members />
           <Contact />
           <Bottom />
+          </div>
         </>
       );
 }

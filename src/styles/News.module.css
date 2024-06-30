@@ -1,21 +1,38 @@
 .newsHeader {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   
   .articleContainer {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping to next line */
-    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .newsSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
   }
   
   .newsArticle {
-    height: 200px;
-    width: 300px;
-    margin: 30px;
+    transform: scale(1.1);
+    margin: 20px;
   }
   
   .articleImg {
     height: 200px;
     width: 300px;
+  }
+
+  button {
+    margin-top: 10px;
+    height: 8vh;
+    width: 30%;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    background-color: #D6CDBA;
   }

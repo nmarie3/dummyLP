@@ -1,11 +1,18 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .newsSNS {
     display: flex;
   }
   
   .news {
+    flex: 70%;
   
   }
   
   .sns {
-  
+    flex: 30%;
   }

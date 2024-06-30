@@ -9,6 +9,7 @@ const News: React.FC = () => {
 
     return (
         <>
+            <section className={styles.newsSection}>
             <h3 className={styles.newsHeader}>News</h3>
             <div className={styles.articleContainer}>
                 <NewsDetails title="test 1" imageSource={Chisato}/>
@@ -17,8 +18,10 @@ const News: React.FC = () => {
                 <NewsDetails title="test 4" imageSource={Chisato}/>
                 <NewsDetails title="test 5" imageSource={Chisato}/>
                 <NewsDetails title="test 6" imageSource={Chisato}/>
-            </div>
-        </>
+                </div>    
+            <button className={styles.moreButton}>MORE +</button>
+            </section>
+            </>
       );
   }
   
