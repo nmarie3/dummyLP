@@ -1,8 +1,12 @@
+
 .membersSection {
     display: flex;
     background-color: #FDF5F3;
     align-items: center;
     justify-content: center;
+    padding-left: 20vh;
+    padding-right: 20vh;
+    padding-bottom: 100px;
 }
 
 
@@ -10,18 +14,23 @@
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    gap: 90px;
-    margin-left: 30vh;
-    margin-right: 30vh;
+    justify-content: space-around;
+    gap: 60px;
 }
+
+.memberContainer > div:last-child {
+    /* padding-right: 80vh; */
+
+}
+
 
 .memberProfile {
     display: flex;
     flex-direction: column;
-    transform: scale(0.9);
-    margin-right: -60px;
+    transform: scale(0.8);
     height: 100%;
     margin-top: -100px;
+    margin-left: -30px;
 }
 
 .withImg {
@@ -29,9 +38,14 @@
     flex-direction: row;
 }
 
+
 .sideDetails {
-    width: 25vh;
-    margin-right: -220px;
+    width: 35vh;
+    margin-right: -180px;
+}
+
+.bottomDetails {
+    margin-left: -140px;
 }
 
 .withImg .bottomDetails {
@@ -39,7 +53,9 @@
 }
 
 .memberImg {
-    margin-bottom: -60px;
+    margin-bottom: -50px;
+    margin-left: 40px;
+    transform: scale(1.1);
 }
 
 .eriko {
@@ -143,7 +159,7 @@
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    font-weight: bold;   
+    font-weight: bold;  
 }
 
 .box4 {
@@ -154,15 +170,24 @@
     padding-left: 10px;
     font-weight: bold; 
     width:70px;
-    height: auto;
+    height: 20px;
     font-size: 13px;
-    margin-bottom: -50px;
-    margin-top: -70px;
+    margin-bottom: -20vh;
 }
 
+h4 {
+        padding: 15px;
+        color:#5E5956;
+        font-weight: bold;
+        font-size: 13px;
+        margin-bottom: -20px;
+        margin-top: -10px;
+}
 .normal4 {
     padding: 20px;
     color:#5E5956;
     font-weight: bold;
     font-size: 13px;
+    margin-bottom: -20px;
+    margin-top: -10px;
 }

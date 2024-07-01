@@ -36,7 +36,11 @@ const Members: React.FC = () => {
                         <>
                         <span className={styles.memberHobby}>特技</span>
                         <br/>
-                        <span className={styles.normalTxt}>焼肉屋さんで、テーブル全員分のお肉をやきながら、自分もみんなと同じかそれ以上のスピードで食べられること。</span>
+                        <span className={styles.normalTxt}>焼肉屋さんで、テーブル</span><br/>
+                        <span className={styles.normalTxt}>全員分のお肉をやきな</span><br/>
+                        <span className={styles.normalTxt}>がら、自分もみんなと同</span><br/>
+                        <span className={styles.normalTxt}>じかそれ以上のスピード</span><br/>
+                        <span className={styles.normalTxt}>で食べられること。</span>
                         </>}
                     color={
                         <>
@@ -398,13 +402,17 @@ const Members: React.FC = () => {
                         <>
                         <span className={styles.memberHobby}>趣味</span>
                         <br/>
-                        <span className={styles.normalTxt}>外国人とのコミュニケーション、映画鑑賞</span>
+                        <span className={styles.normalTxt}>外国人とのコミュニケー</span><br/>
+                        <span className={styles.normalTxt}>ション、映画鑑賞</span>
                         </>}
                     skill={
                         <>
                         <span className={styles.memberHobby}>特技</span>
                         <br/>
-                        <span className={styles.normalTxt}>ダンスの振り付けを覚えるのが早い、子供に好かれる、マイクを持たせたら延々とトークを繰り広げる</span>
+                        <span className={styles.normalTxt}>ダンスの振り付けを覚える</span><br/>
+                        <span className={styles.normalTxt}>のが早い、子供に好かれる</span><br/>
+                        <span className={styles.normalTxt}>、マイクを持たせたら延々と</span><br/>
+                        <span className={styles.normalTxt}>トークを繰り広げる</span>
                         </>}
                     color={
                         <>

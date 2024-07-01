@@ -1,0 +1,15 @@
+.postDate {
+    display: flex;
+    flex-direction: row;
+}
+
+.new {
+    color: white;
+    background-color: #FD6251;
+    display: inline;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: -5px;
+}

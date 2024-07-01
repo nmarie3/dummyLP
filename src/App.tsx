@@ -18,6 +18,7 @@ function App() {
         <div className={styles.body}>
           <TopNavi />
           <Header />
+        <section className={styles.belowHeader}>
         <div className={styles.newsSNS}>
         <div className={styles.news}>
           <News />
@@ -32,6 +33,7 @@ function App() {
           <Members />
           <Contact />
           <Bottom />
+          </section>
           </div>
         </>
       );
