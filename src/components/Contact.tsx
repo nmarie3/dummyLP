@@ -2,7 +2,9 @@ import { useState} from 'react'
 import styles from "../styles/Contact.module.css"
 
 interface ContactState {
+    name: string;
     email: string;
+    inquiry: string;
     text: string;
     isEmailValid: boolean;
     isTextValid: boolean;
@@ -12,6 +14,8 @@ interface ContactState {
 const Contact: React.FC = () => {
     const [state, setState] = useState<ContactState>({
         email: '',
+        name: '',
+        inquiry: '',
         text: '',
         isEmailValid: false,
         isTextValid: false,
@@ -26,6 +30,20 @@ const Contact: React.FC = () => {
             valid = false;
         } else {
             updatedState.isEmailValid = false;
+        }
+
+        if (state.name === '') {
+            updatedState.isTextValid = true;
+            valid = false;
+        } else {
+            updatedState.isTextValid = false;
+        }
+
+        if (state.inquiry === '') {
+            updatedState.isTextValid = true;
+            valid = false;
+        } else {
+            updatedState.isTextValid = false;
         }
 
         if (state.text === '') {
@@ -51,23 +69,19 @@ const Contact: React.FC = () => {
 
     return (
         <>
-            <h2 className={styles.contactHeader}>Contact</h2>
-            <div className={styles.formBox}>
-                <label className={styles.formLabel}>
-                    <h4>すべて入力必須項目です。</h4>
-            <div className={styles.nameBox}>
+        <section className={styles.contactAll}>
+        <h2 className={styles.contactHeader}>Contact</h2>
 
-                <label className={styles.formLabel}>
-                <span className={styles.label}>お名前 <span style={{color: '#F96354'}}>（＊）</span></span>
+            <p className={styles.smallTxt}>すべて入力必須項目です。</p>
+            <p className={styles.label}>お名前 <span style={{color: '#F96354'}}>（＊）</span></p>
                     <input
-                        type="text"
+                        type="name"
                         placeholder="Text"
-                        value={state.text}
-                        onChange={(e) => setState({ ...state, text: e.target.value })}
-                        style={{ backgroundColor: state.isTextValid ? 'red' : 'white' }}
+                        value={state.name}
+                        onChange={(e) => setState({ ...state, name: e.target.value })}
+                        style={{ backgroundColor: state.isTextValid ? '#F96354' : '#F3F2ED' }}
                     />
-                </label>
-            </div>
+            <p className={styles.label}>メールアドレス <span style={{color: '#F96354'}}>（＊）</span></p>
                     <input
                         type="email"
                         placeholder="Email"
@@ -75,21 +89,29 @@ const Contact: React.FC = () => {
                         onChange={(e) => setState({ ...state, email: e.target.value })}
                         style={{ backgroundColor: state.isEmailValid ? '#F96354' : '#F3F2ED' }}
                     />
-                </label>
-                <label className={styles.formLabel}>
+            <p className={styles.label}>お問い合わせ内容 <span style={{color: '#F96354'}}>（＊）</span></p>
+                    <input
+                        type="inquiry"
+                        placeholder="Text"
+                        value={state.inquiry}
+                        onChange={(e) => setState({ ...state, inquiry: e.target.value })}
+                        style={{ backgroundColor: state.isTextValid ? '#FE6556' : '#F3F2ED' }}
+                    />
+            <p className={styles.label}>質問内容 <span style={{color: '#F96354'}}>（＊）</span></p>
                     <input
                         type="text"
                         placeholder="Text"
                         value={state.text}
                         onChange={(e) => setState({ ...state, text: e.target.value })}
-                        style={{ backgroundColor: state.isTextValid ? 'red' : 'white' }}
+                        style={{ backgroundColor: state.isTextValid ? '#FE6556' : '#F3F2ED' }}
                     />
-                </label>
-    
-                <button type="button" onClick={handleSubmit}>送信する SUBMIT ＞</button>
-            </div>
+        </section>
+        <div className={styles.buttons}>
+        <button type="button" onClick={handleSubmit}>＜　戻る BACK</button>
+        <button type="button" onClick={handleSubmit}>送信する SUBMIT ＞</button>
+        </div>
         </>
-    );
-};
+    );}
 
-export default Contact;
+
+    export default Contact

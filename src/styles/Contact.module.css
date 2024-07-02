@@ -1,0 +1,8 @@
+.contactAll {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    padding: 10px;
+}

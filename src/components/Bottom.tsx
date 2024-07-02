@@ -1,10 +1,15 @@
-//import styles from "../styles/Try.module.css"
+import styles from "../styles/Bottom.module.css"
+import CafeBar from "../oka-assets/bar_banner_on_pc.jpg"
 
 
 function Bottom() {
 
   return (
-    <h1>test</h1>
+    <>
+      <div className={styles.bgColor}>
+        <img className={styles.img} src={CafeBar} alt=""/>
+      </div>
+    </>
   );
 }
 

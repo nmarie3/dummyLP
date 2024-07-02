@@ -1,11 +1,12 @@
 //import styles from "../styles/Try.module.css"
 import Mv_pc from "../oka-assets/mv_pc.jpg";
+import styles from "../styles/Header.module.css";
 
 
 function Header() {
 
     return (
-        <img src={Mv_pc} alt=""/>
+        <img className={styles.img} src={Mv_pc} alt=""/>
       );
   }
   
