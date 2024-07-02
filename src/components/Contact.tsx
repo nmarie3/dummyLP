@@ -61,11 +61,12 @@ const Contact: React.FC = () => {
         if (validateForm()) {
             alert('送信済 Submitted.');
         }
+    };
 
         const handleBack = () => {
             alert('前のページに戻る');
-            }
-    };
+        }
+
 
     return (
         <>
@@ -75,6 +76,7 @@ const Contact: React.FC = () => {
             <p className={styles.smallTxt}>すべて入力必須項目です。</p>
             <p className={styles.label}>お名前 <span style={{color: '#F96354'}}>（＊）</span></p>
                     <input
+                        className={styles.normalBox}
                         type="name"
                         placeholder="Text"
                         value={state.name}
@@ -83,6 +85,7 @@ const Contact: React.FC = () => {
                     />
             <p className={styles.label}>メールアドレス <span style={{color: '#F96354'}}>（＊）</span></p>
                     <input
+                        className={styles.emailBox}
                         type="email"
                         placeholder="Email"
                         value={state.email}
@@ -91,6 +94,7 @@ const Contact: React.FC = () => {
                     />
             <p className={styles.label}>お問い合わせ内容 <span style={{color: '#F96354'}}>（＊）</span></p>
                     <input
+                        className={styles.normalBox}
                         type="inquiry"
                         placeholder="Text"
                         value={state.inquiry}
@@ -98,17 +102,17 @@ const Contact: React.FC = () => {
                         style={{ backgroundColor: state.isTextValid ? '#FE6556' : '#F3F2ED' }}
                     />
             <p className={styles.label}>質問内容 <span style={{color: '#F96354'}}>（＊）</span></p>
-                    <input
-                        type="text"
+                    <textarea
+                        className={styles.textBox}
                         placeholder="Text"
                         value={state.text}
                         onChange={(e) => setState({ ...state, text: e.target.value })}
                         style={{ backgroundColor: state.isTextValid ? '#FE6556' : '#F3F2ED' }}
                     />
         </section>
-        <div className={styles.buttons}>
-        <button type="button" onClick={handleSubmit}>＜　戻る BACK</button>
-        <button type="button" onClick={handleSubmit}>送信する SUBMIT ＞</button>
+        <div className={styles.buttonGroup}>
+        <button className={styles.backBtn} type="button" onClick={handleBack}>＜　戻る　　BACK</button>
+        <button className={styles.submitBtn} type="button" onClick={handleSubmit}>送信する　　　　SUBMIT ＞</button>
         </div>
         </>
     );}

@@ -12,7 +12,7 @@ const NewsDetails: React.FC<Articles> = ({imageSource, title}) => {
         <>
             <div className={styles.newsArticle}>
                 <img className={styles.articleImg} src={imageSource} alt={title}/>
-                <p>{title}</p>
+                <p className={styles.newsTitle}>{title}</p>
             </div>    
         </>
 

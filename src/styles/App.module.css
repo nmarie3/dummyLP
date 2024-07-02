@@ -1,3 +1,7 @@
+* {
+  box-sizing: 0;
+}
+
 .body {
   display: flex;
   flex-direction: column;
@@ -7,18 +11,20 @@
 
 
 .belowHeader {
-  padding: 10vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
 }
 
 .newsSNS {
-    display: flex;
+    display: grid; 
+    grid-template-columns: 70% 30%;
   }
-  
-  .news {
-    flex: 80%;
-  
-  }
-  
-  .sns {
-    flex: 30%;
-  }
+
+
+.members {
+  background-color: #FDF5F3;
+}
+
+.bottom {
+  background-color: #D7D4C2;
+}

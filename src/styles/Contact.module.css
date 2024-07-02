@@ -3,6 +3,66 @@
     flex-direction: column;
 }
 
-.buttons {
-    padding: 10px;
+input {
+    border: none;
 }
+
+textarea {
+    border: none;
+    margin-bottom: 50px;
+}
+
+.normalBox {
+    width: 40vh;
+    height: 40px;
+}
+
+.emailBox {
+    width: 60vh;
+    height: 40px;
+}
+
+.textBox {
+    width: 90vh;
+    height: 220px;
+}
+
+.backBtn {
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 5px;
+    margin-bottom: 80px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    background-color: #D6CDBA;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.submitBtn {
+    display: inline-block;
+    text-align: left;
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 30px;
+    margin-bottom: 80px;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    background-color: #D6CDBA;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.8;
+  }

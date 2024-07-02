@@ -30,9 +30,13 @@ function App() {
           <Schedule/>
           <PastSchedule />
           <Music />
+        <div className={styles.members}> 
           <Members />
+        </div>
           <Contact />
+        <div className={styles.bottom}> 
           <Bottom />
+        </div> 
           </section>
           </div>
         </>

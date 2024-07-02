@@ -9,8 +9,8 @@ const News: React.FC = () => {
 
     return (
         <>
-            <section className={styles.newsSection}>
             <h3 className={styles.newsHeader}>News</h3>
+            <section className={styles.newsSection}>
             <div className={styles.articleContainer}>
                 <NewsDetails title="test 1" imageSource={Chisato}/>
                 <NewsDetails title="test 2" imageSource={Chisato}/>

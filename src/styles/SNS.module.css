@@ -1,10 +1,15 @@
+.SNScontainer {
+    display: flex;
+    justify-content: center;
+}
+
 .SNSheader {
     font-size: 24px;
     margin-bottom: 5px;
 }
 
-.scrollBox {
-    height: 80%;
-    width: 70%;
+.instagram {
     border: black solid 2px;
+    height: 680px;
+    width: 480px;
 }

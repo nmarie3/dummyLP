@@ -1,4 +1,38 @@
-.img {
-    width: 100%;
-    height: auto;
+.container {
+    display: flex;
+}
+
+.headerImg {
+    width: 90vw;
+    height: 90vh
+}
+
+@media (max-width: 639px) {
+  .container {
+    height: 360px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .container {
+    height: 768px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    height: 720px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .container {
+    height: 1080px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    height: 1080px;
+  }
 }

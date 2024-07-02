@@ -1,0 +1,15 @@
+.musicBanner {
+    display: grid;
+    grid-template-columns: 48% 54%;
+    justify-items: center;
+    align-items: center;
+    background-color: #FDF5F3;
+}
+
+.musicImg1 {
+
+}
+
+.musicImg2 {
+
+}

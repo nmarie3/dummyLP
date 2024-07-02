@@ -1,6 +1,5 @@
 import styles from "../styles/SNS.module.css"
-import React, {useState, useEffect} from 'react';
-import axios from 'axios';
+import { InstagramEmbed } from 'react-social-media-embed';
 
 interface Posts {
     id: string;
@@ -8,39 +7,16 @@ interface Posts {
 }
 
 const SNS: React.FC = () => {
-    const [posts, setPosts] = useState<Posts[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-
-    useEffect(() => {
-        const fetchPosts = async () => {
-            try {
-                const response = await axios.get('/api.posts');
-                setPosts(response.data);
-                setLoading(false);
-            } catch(error) {
-                console.error("Error fetching posts", error);
-                setLoading(false);
-            }
-        }
-
-        fetchPosts();
-    }, []);
+    
 
     return (
         <>
-            <h3 className={styles.SNSheader}>SNS</h3>
-            <div className={styles.scrollBox}>
-                {loading ? (
-                    <p>Loading posts...</p>
-                ) : (
-                    <ul>
-                        {posts.map((posts) => (
-                            <li key={posts.id}>{posts.text}</li>
-                        ))}
-                    </ul>
-                )}
+        <h3 className={styles.SNSHeader}>Twitter</h3>
+        <div className={styles.SNScontainer}>
+            <div className={styles.instagram}>
+            <p>Twitter posts load here</p>
             </div>
-
+        </div>
         </>
       );
   }
