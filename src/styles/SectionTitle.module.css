@@ -1,0 +1,18 @@
+.fullTitle {
+    display: flex;
+    flex-direction: row;
+}
+
+.titleBar {
+    height: 5px;
+    width: 65px;
+    align-self: center;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.allTitlesStyle {
+    color: #02326C;
+    font-weight: bold;
+    font-size: 25px;
+}

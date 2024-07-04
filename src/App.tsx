@@ -38,6 +38,7 @@ function App() {
           <Bottom />
         </div> 
           </section>
+          <Bottom />
           </div>
         </>
       );

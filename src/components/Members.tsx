@@ -10,6 +10,7 @@ import Satomi from "../assets/satomi.png";
 import Momomi from "../assets/momomi.png";
 import Keina from "../assets/keina.png";
 import Airi from "../assets/airi.png";
+import SectionTitleComponent from "./SectionTitleComponent";
 
 
 
@@ -17,8 +18,7 @@ const Members: React.FC = () => {
 
     return (
         <>
-            <h3 className={styles.membersHeader}>Members</h3>
-            <section className={styles.membersSection}>
+            <SectionTitleComponent title="Member." styles={{backgroundColor:"#FF5B4C"}}/>
             <div className={styles.memberContainer}>
                 <MembersDetails name={
                     <>
@@ -441,7 +441,6 @@ const Members: React.FC = () => {
                     imageSource={Airi}
                 />
                 </div>   
-                </section> 
             </>
       );
   }

@@ -1,11 +1,21 @@
 .container {
-    display: flex;
+  display: flex;
 }
 
 .headerImg {
-    width: 90vw;
-    height: 90vh
+    width: 100%;
 }
+
+.alertImg {
+  display: block;
+  margin-left: -850px;
+  margin-top: 900px;
+  z-index: 1;
+  transform: scale(1.5);
+}
+
+
+
 
 @media (max-width: 639px) {
   .container {

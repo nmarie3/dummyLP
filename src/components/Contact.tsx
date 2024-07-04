@@ -1,5 +1,7 @@
 import { useState} from 'react'
 import styles from "../styles/Contact.module.css"
+import SectionTitleComponent from "./SectionTitleComponent";
+
 
 interface ContactState {
     name: string;
@@ -71,8 +73,7 @@ const Contact: React.FC = () => {
     return (
         <>
         <section className={styles.contactAll}>
-        <h2 className={styles.contactHeader}>Contact</h2>
-
+            <SectionTitleComponent title="Contact." styles={{backgroundColor:"#FF5B4C"}}/>
             <p className={styles.smallTxt}>すべて入力必須項目です。</p>
             <p className={styles.label}>お名前 <span style={{color: '#F96354'}}>（＊）</span></p>
                     <input

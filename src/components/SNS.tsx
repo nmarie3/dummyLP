@@ -1,5 +1,5 @@
 import styles from "../styles/SNS.module.css"
-import { InstagramEmbed } from 'react-social-media-embed';
+import SectionTitleComponent from "./SectionTitleComponent";
 
 interface Posts {
     id: string;
@@ -11,8 +11,8 @@ const SNS: React.FC = () => {
 
     return (
         <>
-        <h3 className={styles.SNSHeader}>Twitter</h3>
         <div className={styles.SNScontainer}>
+        <SectionTitleComponent title="Twitter." styles={{backgroundColor:"#FF5B4C"}}/>
             <div className={styles.instagram}>
             <p>Twitter posts load here</p>
             </div>

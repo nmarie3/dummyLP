@@ -1,6 +1,7 @@
 .postDate {
     display: flex;
     flex-direction: row;
+    background-color: white;
 }
 
 .new {
@@ -12,4 +13,30 @@
     padding-left: 8px;
     padding-right: 8px;
     margin-top: -5px;
+}
+
+.schedules {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.pastContainer {
+    background-color: #F3F2ED;
+}
+
+.decorationTop {
+    background-color: #E1E1E1;
+    height: 3px;
+    border-radius: 3px;
+    margin-top: -55px;
+    margin-bottom: 40px;
+    z-index: -1;
+}
+
+.decorationBottom {
+    background-color: #E1E1E1;
+    height: 3px;
+    border-radius: 3px;
+    margin-top: 45px;
 }

@@ -1,12 +1,4 @@
-.SNScontainer {
-    display: flex;
-    justify-content: center;
-}
 
-.SNSheader {
-    font-size: 24px;
-    margin-bottom: 5px;
-}
 
 .instagram {
     border: black solid 2px;
