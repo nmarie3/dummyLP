@@ -18,12 +18,12 @@ const News: React.FC = () => {
             <SectionTitleComponent title="News." styles={{backgroundColor:"#FF5B4C"}}/>
             <section className={styles.newsSection}>
             <div className={styles.articleContainer}>
-                <NewsDetails title="News Title 1" imageSource={Stock1}/>
-                <NewsDetails title="News Title 2" imageSource={Stock2}/>
-                <NewsDetails title="News Title 3" imageSource={Stock3}/>
-                <NewsDetails title="News Title 4" imageSource={Stock4}/>
-                <NewsDetails title="News Title 5" imageSource={Stock5}/>
-                <NewsDetails title="News Title 6" imageSource={Stock6}/>
+                <NewsDetails title="News Title 1" imageSource={Stock1} link="https://lycoris-recoil.com/"/>
+                <NewsDetails title="News Title 2" imageSource={Stock2} link="https://lycoris-recoil.com/"/>
+                <NewsDetails title="News Title 3" imageSource={Stock3} link="https://lycoris-recoil.com/"/>
+                <NewsDetails title="News Title 4" imageSource={Stock4} link="https://lycoris-recoil.com/"/>
+                <NewsDetails title="News Title 5" imageSource={Stock5} link="https://lycoris-recoil.com/"/>
+                <NewsDetails title="News Title 6" imageSource={Stock6} link="https://lycoris-recoil.com/"/>
                 </div>
             <div className={styles.buttonStyle}>    
             <button className={styles.moreButton}>MORE +</button>

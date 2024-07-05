@@ -8,7 +8,7 @@ const event1 = {
     isNew:true, 
     titleDate:"4/10 ", 
     title:"Schedule Title 1", 
-    link:"https://en.wikipedia.org/wiki/Lycoris_Recoil",
+    link:"https://lycoris-recoil.com/",
     isCurrentEvent: true,
 };
 
@@ -17,7 +17,7 @@ const event2 = {
     isNew:true, 
     titleDate:"4/10 ", 
     title:"Schedule Title 2", 
-    link:"https://en.wikipedia.org/wiki/Lycoris_Recoil",
+    link:"https://lycoris-recoil.com/",
     isCurrentEvent: true,
 };
 
@@ -26,7 +26,7 @@ const event3 = {
     isNew: false, 
     titleDate:"4/10 ", 
     title:"Schedule Title 3", 
-    link:"https://en.wikipedia.org/wiki/Lycoris_Recoil",
+    link:"https://lycoris-recoil.com/",
     isCurrentEvent: true,
 };
 
