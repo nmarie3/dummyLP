@@ -16,10 +16,8 @@
 
   .newsSection {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     flex-direction: column;
-    margin-right: 0;
+    margin-left: 100px;
   }
   
   .newsArticle {
@@ -47,7 +45,7 @@
     border: none;
     background-color: #D6CDBA;
     font-size: 30px;
-
+    margin-bottom: 50px;
   }
 
   button:hover {

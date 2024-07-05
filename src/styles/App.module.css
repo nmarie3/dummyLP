@@ -6,14 +6,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  /* transform: scale(0.5); */
 }
 
-
-.belowHeader {
-  padding-left: 10vh;
-  padding-right: 10vh;
-}
 
 .newsSNS {
     display: grid; 

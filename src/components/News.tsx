@@ -15,8 +15,8 @@ const News: React.FC = () => {
 
     return (
         <>
-            <section className={styles.newsSection}>
             <SectionTitleComponent title="News." styles={{backgroundColor:"#FF5B4C"}}/>
+            <section className={styles.newsSection}>
             <div className={styles.articleContainer}>
                 <NewsDetails title="News Title 1" imageSource={Stock1}/>
                 <NewsDetails title="News Title 2" imageSource={Stock2}/>

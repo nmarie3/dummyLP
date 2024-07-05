@@ -11,8 +11,8 @@ const SNS: React.FC = () => {
 
     return (
         <>
+        <SectionTitleComponent title="Twitter." styles={{backgroundColor:"#FF5B4C", marginLeft: "-150px"}}/>
         <div className={styles.SNScontainer}>
-        <SectionTitleComponent title="Twitter." styles={{backgroundColor:"#FF5B4C"}}/>
             <div className={styles.instagram}>
             <p>Twitter posts load here</p>
             </div>

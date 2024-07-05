@@ -36,8 +36,8 @@ const Schedule: React.FC = () => {
 
     return (
         <>
-            <section className={styles.eventsSection}>
             <SectionTitleComponent title="Schedule." styles={{backgroundColor:"#FF5B4C"}}/>
+            <section className={styles.eventsSection}>
             <div className={styles.eventsContainer}>
                 <ScheduleDetails postDate={event1.postDate} isNew={event1.isNew} titleDate={event1.titleDate} title={event1.title} link={event1.link} isCurrentEvent={event1.isCurrentEvent}/>
                 <ScheduleDetails postDate={event2.postDate} isNew={event2.isNew} titleDate={event2.titleDate} title={event2.title} link={event2.link} isCurrentEvent={event2.isCurrentEvent}/>
