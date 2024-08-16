@@ -200,7 +200,7 @@
 } */
 
 
-@media (min-width: 1024px) and (max-width: 1920px) {
+@media (min-width: 1024px) {
     .membersSection {
         display: flex;
         background-color: #FDF5F3;

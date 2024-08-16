@@ -82,28 +82,9 @@ a {
   }
 }
 
-/* iphoneXR */
-@media (min-width: 414px) {
-
-}
-
-/* xs */
-@media (min-width: 475px) {
-
-}
-
-/* sm */
-@media (min-width: 640px) {
-
-}
-
-/* md */
-@media (min-width: 768px) {
-
-}
 
 /* lg */
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1000px) {
   .naviBar {
     margin-bottom: -1rem;
     margin-left: 2vw;

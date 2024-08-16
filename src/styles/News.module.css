@@ -73,7 +73,7 @@ button:hover {
 }
 
 /* PC-lg */
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1000px) {
   .articleContainer {
     display: flex;
     justify-content: space-around;

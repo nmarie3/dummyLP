@@ -90,7 +90,7 @@ textarea {
   }
 
 /* PC-lg */
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1000px) {
     .contactAll {
         display: flex;
         flex-direction: column;
@@ -102,23 +102,27 @@ textarea {
         font-size: 1vw;
     }
     
+    .label {
+        font-size: 1.5vw;
+    }
+
     textarea {
         border: none;
         margin-bottom: 1rem;
     }
     
     .normalBox {
-        width: 20vw;
-        height: 2rem;
-    }
-    
-    .emailBox {
         width: 30vw;
         height: 2rem;
     }
     
-    .textBox {
+    .emailBox {
         width: 40vw;
+        height: 2rem;
+    }
+    
+    .textBox {
+        width: 50vw;
         height: 5rem;
     }
     

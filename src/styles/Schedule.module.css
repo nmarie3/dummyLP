@@ -76,7 +76,7 @@
 }
 
 /* PC-lg */
-@media (min-width: 1280px) and (max-width: 1920px) {
+@media (min-width: 1000px) {
     .eventsContainer {
         width: 90vw;
         padding-left: 1.5vw;
