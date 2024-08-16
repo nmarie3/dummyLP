@@ -1,19 +1,39 @@
 .fullTitle {
     display: flex;
     flex-direction: row;
-    padding-left: 150px;
+    padding-left: 2rem;
+    z-index: -1;
+    padding-top:0;
+    margin-top: 0.1vw;
 }
 
 .titleBar {
     height: 5px;
-    width: 65px;
+    width: 40px;
     align-self: center;
-    margin-right: 20px;
+    margin-right: 1rem;
     border-radius: 3px;
 }
 
 .allTitlesStyle {
     color: #02326C;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 6vw;
 }
+
+/* PC-lg */
+@media (min-width: 1280px) and (max-width: 1920px) {
+    .fullTitle {
+        padding-left: 7vw;
+    }
+
+    .titleBar {
+        height: 0.3vw;
+        width: 2vw;
+        margin-top: 1vw;
+    }
+
+    .allTitlesStyle {
+        font-size: 2vw;
+    }
+  }

@@ -36,6 +36,7 @@ const Schedule: React.FC = () => {
 
     return (
         <>
+            <div id="schedule">
             <SectionTitleComponent title="Schedule." styles={{backgroundColor:"#FF5B4C"}}/>
             <section className={styles.eventsSection}>
             <div className={styles.eventsContainer}>
@@ -44,6 +45,7 @@ const Schedule: React.FC = () => {
                 <ScheduleDetails postDate={event3.postDate} isNew={event3.isNew} titleDate={event3.titleDate} title={event3.title} link={event3.link} isCurrentEvent={event3.isCurrentEvent}/>
                 </div>    
             </section>
+            </div>
             </>
       );
   }

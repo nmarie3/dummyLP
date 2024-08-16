@@ -18,7 +18,8 @@ const Members: React.FC = () => {
 
     return (
         <>
-            <SectionTitleComponent title="Member." styles={{backgroundColor:"#FF5B4C"}}/>
+            <div id="members">
+            <SectionTitleComponent title="Members." styles={{backgroundColor:"#FF5B4C"}}/>
             <div className={styles.memberContainer}>
                 <MembersDetails name={
                     <>
@@ -36,11 +37,7 @@ const Members: React.FC = () => {
                         <>
                         <span className={styles.memberHobby}>特技</span>
                         <br/>
-                        <span className={styles.normalTxt}>焼肉屋さんで、テーブル</span><br/>
-                        <span className={styles.normalTxt}>全員分のお肉をやきな</span><br/>
-                        <span className={styles.normalTxt}>がら、自分もみんなと同</span><br/>
-                        <span className={styles.normalTxt}>じかそれ以上のスピード</span><br/>
-                        <span className={styles.normalTxt}>で食べられること。</span>
+                        <span className={styles.normalTxt}>焼肉屋さんで、テーブル全員分のお肉をやきながら、自分もみんなと同じかそれ以上のスピードで食べられること。</span>
                         </>}
                     color={
                         <>
@@ -89,7 +86,7 @@ const Members: React.FC = () => {
                         </>}
                     color={
                         <>
-                        <span className={styles.ramuneColorBadge}>● Andalusian White</span>
+                        <span className={styles.ramuneColorBadge}>● White</span>
                         </>}
                     height={
                         <>
@@ -233,7 +230,7 @@ const Members: React.FC = () => {
                         </>}
                     birthday={
                         <>
-                        <span className={`${styles.nanaoBackground} ${styles.box4}`}>BIRTH.</span>
+                        <span className={`${styles.nanaBackground} ${styles.box4}`}>BIRTH.</span>
                         <span className={styles.normal4}>1995.10.2</span>
                         </>}
                     blood={
@@ -348,10 +345,7 @@ const Members: React.FC = () => {
                         <>
                         <span className={styles.memberHobby}>趣味</span>
                         <br/>
-                        <span className={styles.normalTxt}>北海道の馬産地へ育こと</span><br/>
-                        <span className={styles.normalTxt}>ギター。作詞作曲、ゲーム</span><br/>
-                        <span className={styles.normalTxt}>世界両行ごっこ、乗馬</span><br/>
-                        <span className={styles.normalTxt}>ダンス(hiphop)</span>
+                        <span className={styles.normalTxt}>北海道の馬産地へ育こと、ギター、作詞作曲、ゲーム、世界両行ごっこ、乗馬、ダンス(hiphop)</span>
                         </>}
                     skill={
                         <>
@@ -409,10 +403,7 @@ const Members: React.FC = () => {
                         <>
                         <span className={styles.memberHobby}>特技</span>
                         <br/>
-                        <span className={styles.normalTxt}>ダンスの振り付けを覚える</span><br/>
-                        <span className={styles.normalTxt}>のが早い、子供に好かれる</span><br/>
-                        <span className={styles.normalTxt}>、マイクを持たせたら延々と</span><br/>
-                        <span className={styles.normalTxt}>トークを繰り広げる</span>
+                        <span className={styles.normalTxt}>ダンスの振り付けを覚えるのが早い、子供に好かれる、マイクを持たせたら延々とトークを繰り広げる</span>
                         </>}
                     color={
                         <>
@@ -440,6 +431,7 @@ const Members: React.FC = () => {
                     </>}
                     imageSource={Airi}
                 />
+                </div>
                 </div>   
             </>
       );

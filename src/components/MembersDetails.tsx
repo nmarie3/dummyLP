@@ -21,17 +21,17 @@ const MembersDetails: React.FC<Members> = ({imageSource, name, hobby, skill, col
             <div className={styles.memberProfile}>
                 <div className={styles.withImg}>
                     <div className={styles.sideDetails}>
-                        <p>{name}</p>
-                        <p>{hobby}</p>
-                        <p>{skill}</p>
-                        <p>{color}</p>
-                    </div>
-                    <div className={styles.bottomDetails}>
-                        <h4>{birthday}</h4>
-                        <h4>{blood}</h4>
-                        <h4>{height}</h4>
-                        <h4>{born}</h4>
-                        <h4>{uni}</h4>
+                        <p className={styles.membersP}>{name}</p>
+                        <p className={styles.membersP}>{hobby}</p>
+                        <p className={styles.membersP}>{skill}</p>
+                        <p className={styles.membersP}>{color}</p>
+                        <div className={styles.h4Bottom}>
+                            <h4 className={styles.membersH4}>{birthday}</h4>
+                            <h4 className={styles.membersH4}>{blood}</h4>
+                            <h4 className={styles.membersH4}>{height}</h4>
+                            <h4 className={styles.membersH4}>{born}</h4>
+                            <h4 className={styles.membersH4}>{uni}</h4>
+                        </div>
                     </div>
                     <img className={styles.memberImg} src={imageSource}/>
                 </div>

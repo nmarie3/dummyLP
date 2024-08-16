@@ -15,6 +15,7 @@ const News: React.FC = () => {
 
     return (
         <>
+            <div id="news">
             <SectionTitleComponent title="News." styles={{backgroundColor:"#FF5B4C"}}/>
             <section className={styles.newsSection}>
             <div className={styles.articleContainer}>
@@ -22,13 +23,14 @@ const News: React.FC = () => {
                 <NewsDetails title="News Title 2" imageSource={Stock2} link="https://lycoris-recoil.com/"/>
                 <NewsDetails title="News Title 3" imageSource={Stock3} link="https://lycoris-recoil.com/"/>
                 <NewsDetails title="News Title 4" imageSource={Stock4} link="https://lycoris-recoil.com/"/>
-                <NewsDetails title="News Title 5" imageSource={Stock5} link="https://lycoris-recoil.com/"/>
-                <NewsDetails title="News Title 6" imageSource={Stock6} link="https://lycoris-recoil.com/"/>
+                <NewsDetails title="News Title 5" imageSource={Stock4} link="https://lycoris-recoil.com/"/>
+                <NewsDetails title="News Title 6" imageSource={Stock4} link="https://lycoris-recoil.com/"/>
                 </div>
             <div className={styles.buttonStyle}>    
             <button className={styles.moreButton}>MORE +</button>
             </div>
             </section>
+            </div>
             </>
       );
   }

@@ -1,10 +1,61 @@
-.musicBanner {
-    display: grid;
-    grid-template-columns: 48% 54%;
-    justify-items: center;
+.musicImgContainer {
+    display: flex;
     align-items: center;
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 10vw;
     background-color: #FDF5F3;
-    margin-bottom: 60px;
-    margin-left: 150px;
-    margin-right: 150px;
 }
+
+.musicImg1 {
+    width: 100%;
+}
+
+.musicImg2 {
+    margin-top: -6px;
+    width: 86vw;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+
+/* PC-lg */
+@media (min-width: 1280px) and (max-width: 1920px) {
+    .musicImgContainer {
+        display: flex;
+        flex-direction: row;
+        width:90vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    .musicImg1 {
+        width: 44.5vw;
+        height: auto;
+    }
+
+    .musicImg2 {
+        margin-top: -6px;
+        width: 43.5vw;
+        height: auto;
+        padding-top: 0;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+  }
+  
+  /* xl */
+  @media (min-width: 1280px) {
+  
+  }
+  
+  /* 2xl */
+  @media (min-width: 1536px) {
+  
+  }

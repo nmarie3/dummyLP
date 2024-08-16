@@ -72,6 +72,7 @@ const Contact: React.FC = () => {
 
     return (
         <>
+        <div id="contact">
         <SectionTitleComponent title="Contact." styles={{backgroundColor:"#FF5B4C"}}/>
         <section className={styles.contactAll}>
             <p className={styles.smallTxt}>すべて入力必須項目です。</p>
@@ -112,8 +113,9 @@ const Contact: React.FC = () => {
                     />
         </section>
         <div className={styles.buttonGroup}>
-        <button className={styles.backBtn} type="button" onClick={handleBack}>＜　戻る　　BACK</button>
-        <button className={styles.submitBtn} type="button" onClick={handleSubmit}>送信する　　　　SUBMIT ＞</button>
+        <button className={styles.backBtn} type="button" onClick={handleBack}>＜ BACK</button>
+        <button className={styles.submitBtn} type="button" onClick={handleSubmit}>SUBMIT ＞</button>
+        </div>
         </div>
         </>
     );}

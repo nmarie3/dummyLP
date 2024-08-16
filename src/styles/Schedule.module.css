@@ -1,48 +1,144 @@
 .eventsSection {
-    margin-left: 100px;
-    margin-right: 100px;
+    display: flex;
+    justify-content: center;
 }
+
+.eventsContainer {
+    width: 100%;
+    padding: 0.8rem;
+    height: 100%;
+    margin-top: -1rem;
+}
+
 
 .postDate {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding-bottom: 0.2rem;
+    padding-top:0rem;
+    margin-bottom: -1rem;
 }
 
 .new {
+    font-size: 0.8rem;
     color: white;
     background-color: #FD6251;
     display: inline;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    margin-top: 0.3rem;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 2px;
     padding-left: 8px;
     padding-right: 8px;
-    margin-top: -5px;
+    margin-left: 1rem;
+    margin-bottom: 0.4rem;
 }
 
 .schedules {
     display: flex;
     flex-direction: column;
-    margin: 40px;
+}
+
+.eventTitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+}
+
+.pastSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .pastContainer {
     background-color: #F3F2ED;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
 }
 
-/* .decorationTop {
+.decorationTop {
     background-color: #E1E1E1;
-    height: 3px;
+    height: 2px;
     border-radius: 3px;
-    margin-top: -55px;
-    margin-bottom: 40px;
-    z-index: -1;
-} */
+    margin-bottom: 0.5rem;
+}
 
 .decorationBottom {
     background-color: #E1E1E1;
-    height: 3px;
+    height: 2px;
     border-radius: 3px;
-    margin-top: 45px;
+    margin-bottom: 0.1rem;
+    margin-top: 0.9rem;
 }
+
+/* PC-lg */
+@media (min-width: 1280px) and (max-width: 1920px) {
+    .eventsContainer {
+        width: 90vw;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        margin-bottom: 5vw;
+    }
+
+    .pastContainer {
+        width: 90vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        margin-bottom: 2vw;
+    }
+
+    .postDate {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 0.2rem;
+        padding-top:0rem;
+        margin-bottom: -1rem;
+        font-size: 2vw;
+    }
+    
+    .new {
+        font-size: 2vw;
+        color: white;
+        background-color: #FD6251;
+        display: inline;
+        margin-top: 0.3rem;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 2px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-left: 1rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .schedules {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .eventTitle {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0.5rem;
+        font-size: 2vw;
+    }
+    
+    .pastSection {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: center;
+        margin-bottom: 2vw;
+    }
+    
+    .pastContainer {
+        background-color: #F3F2ED;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+  }
